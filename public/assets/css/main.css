@@ -1,0 +1,180 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none; }
+
+footer, header, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+:root {
+  --black-background: black; }
+
+html {
+  font-family: 'Roboto', sans-serif; }
+
+/*Header*/
+.header {
+  background-color: var(--black-background);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  /*siempre top con sticky*/ }
+
+.header-img {
+  width: 100px;
+  margin-left: 10px; }
+
+.header-menu {
+  width: 30px;
+  order: 1;
+  /*Nos lleva a la derecha*/
+  margin-right: 10px; }
+
+/*Está oculto*/
+.header-nav_ul {
+  display: none;
+  /*inline*/
+  color: white; }
+
+/*End of hidden*/
+/*First  section*/
+.first-section {
+  background-color: #58A6FF;
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  /*ponerlo en el padre*/ }
+
+/* .first-section_div1{
+    display: none;
+} */
+.first-section_div2 {
+  justify-content: end;
+  flex-direction: column;
+  padding: 15px; }
+
+/*End of hidden*/
+.first-section_h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold; }
+
+.first-section_subtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+
+.first-section_button {
+  color: white;
+  background-color: #238636;
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 20px; }
+
+.first-section_note {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 15px; }
+
+/*End of first section/
+
+/*Second section*/
+.second-section {
+  background-color: white; }
+
+.second-section_h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center; }
+
+.second-section_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px; }
+
+.second-section_article {
+  display: flex;
+  gap: 20px; }
+
+.second-section_img {
+  width: 100px; }
+
+.bold-text {
+  font-weight: bold;
+  font-size: 18px; }
+
+/*End of second section*/
+/*Footer*/
+.footer {
+  background-color: var(--black-background);
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between; }
+
+.footer_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.footer-img_es {
+  transform: scale(0.5); }
+
+/*End of footer*/
+/*Media queries*/
+@media all and (min-width: 480px) {
+  .first-section {
+    /*meter una imagen en el fondo a partir del peso de tablet*/
+    background-image: url("../images/premium_dancer-cabecera.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain; } }
+
+/*# sourceMappingURL=main.css.map */
