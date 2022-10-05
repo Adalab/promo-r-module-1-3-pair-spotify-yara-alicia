@@ -1,8 +1,154 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+// @import 'core/variables';
+// @import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'pages/index';
+@import "core/reset";
+
+:root {
+  --black-background: black;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Header*/
+.header {
+  background-color: var(--black-background);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0; /*siempre top con sticky*/
+}
+
+.header-img {
+  width: 100px;
+  margin-left: 10px;
+}
+.header-menu {
+  width: 30px;
+  order: 1; /*Nos lleva a la derecha*/
+  margin-right: 10px;
+}
+/*Está oculto*/
+.header-nav_ul {
+  display: none; /*inline*/
+  color: white;
+}
+/*End of hidden*/
+
+/*First  section*/
+.first-section {
+  background-color: #58a6ff;
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  /*ponerlo en el padre*/
+}
+/* .first-section_div1{
+    display: none;
+} */
+.first-section_div2 {
+  justify-content: end;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/*End of hidden*/
+.first-section_h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.first-section_subtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.first-section_button {
+  color: white;
+  background-color: #238636;
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.first-section_note {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/*End of first section/
+
+/*Second section*/
+.second-section {
+  background-color: white;
+}
+.second-section_h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.second-section_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+}
+
+.second-section_article {
+  display: flex;
+  gap: 20px;
+}
+
+.second-section_img {
+  width: 100px;
+}
+.bold-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*End of second section*/
+
+/*Footer*/
+.footer {
+  background-color: var(--black-background);
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-img_es {
+  transform: scale(0.5);
+}
+
+/*End of footer*/
+/*Media queries*/
+@media all and (min-width: 480px) {
+  .first-section {
+    /*meter una imagen en el fondo a partir del peso de tablet*/
+    background-image: url("../images/premium_dancer-cabecera.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .second-section {
+  }
+}
