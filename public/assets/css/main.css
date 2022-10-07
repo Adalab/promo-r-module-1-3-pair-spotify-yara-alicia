@@ -48,7 +48,7 @@ input {
   --black-background: black; }
 
 html {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 /*Header*/
 .header {
@@ -57,7 +57,8 @@ html {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  /*siempre top con sticky*/ }
+  /*siempre top con sticky*/
+  padding: 10px; }
 
 .header-img {
   width: 100px;
@@ -78,7 +79,7 @@ html {
 /*End of hidden*/
 /*First  section*/
 .first-section {
-  background-color: #58A6FF;
+  background-color: #58a6ff;
   height: 50vh;
   display: flex;
   justify-content: end;
@@ -170,11 +171,32 @@ html {
 /*End of footer*/
 /*Media queries*/
 @media all and (min-width: 480px) {
+  .header-menu {
+    display: none; }
+  .header-nav_ul {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 12px; }
+  .header-nav_ul_li {
+    padding-top: 10px; }
   .first-section {
     /*meter una imagen en el fondo a partir del peso de tablet*/
     background-image: url("../images/premium_dancer-cabecera.png");
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain; } }
+    background-size: contain; }
+  .first-section_h1 {
+    font-size: 45px;
+    display: flex;
+    flex-direction: column; }
+  .first-section_button {
+    width: 15%;
+    padding: 15px;
+    font-size: 10px;
+    border-radius: 20px; }
+  .first-section_note {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
