@@ -109,12 +109,8 @@ input {
   --black-background: black; }
 
 html {
-<<<<<<< HEAD
-  font-family: "Roboto", sans-serif; }
-=======
   font-family: "Roboto", sans-serif;
   font-size: 62.5%; }
->>>>>>> e6f50e4994f4d25a69ea643c22f17c473dfdea9c
 
 /*Header*/
 .header {
@@ -178,14 +174,22 @@ html {
 
 .first-section_button {
   color: white;
+  background-color: #238636;
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 20px; }
+
+/*.first-section_note {
+  color: white;
+  font-size: 16px;
   background-color: #2eac48;
   padding: 25px;
   margin-left: 15px;
   border-radius: 30px;
   width: 92%;
   text-align: center;
-  font-weight: 600; }
-
+  font-weight: 600;
+}*/
 .first-section_note {
   color: white;
   font-size: 1.6rem;
@@ -270,12 +274,16 @@ html {
     font-size: 45px;
     display: flex;
     flex-direction: column; }
+  /* .months {
+  } */
   .first-section_button {
     width: 15%;
     padding: 15px;
     font-size: 10px;
     border-radius: 20px; }
   .first-section_note {
-    font-size: 10px; } }
+    font-size: 10px; }
+  /* .second-section {
+  } */ }
 
 /*# sourceMappingURL=main.css.map */
